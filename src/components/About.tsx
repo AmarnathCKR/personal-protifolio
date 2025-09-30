@@ -77,7 +77,7 @@ const About: React.FC<AboutProps> = ({ isDark }) => {
                 <div className={`text-center p-4 rounded-lg ${
                   isDark ? 'bg-gray-900' : 'bg-gray-50'
                 }`}>
-                  <div className="text-3xl font-bold text-blue-600 mb-2">2+</div>
+                  <div className="text-3xl font-bold text-blue-600 mb-2">3+</div>
                   <div className={`text-sm ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>
                     Years Experience
                   </div>
@@ -85,7 +85,7 @@ const About: React.FC<AboutProps> = ({ isDark }) => {
                 <div className={`text-center p-4 rounded-lg ${
                   isDark ? 'bg-gray-900' : 'bg-gray-50'
                 }`}>
-                  <div className="text-3xl font-bold text-purple-600 mb-2">10+</div>
+                  <div className="text-3xl font-bold text-purple-600 mb-2">15+</div>
                   <div className={`text-sm ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>
                     Projects Completed
                   </div>

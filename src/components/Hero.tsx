@@ -110,14 +110,14 @@ const Hero: React.FC<HeroProps> = ({ isDark }) => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-            <button className="group bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-xl font-semibold transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/25">
+            <button onClick={() => window.open('https://drive.google.com/file/d/1SfRc8vHWyT4d-LKX_APiG9toY0sLaLxV/view?usp=drivesdk', '_blank')} className="group bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-xl font-semibold transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/25">
               <span className="flex items-center space-x-2">
                 <Download className="w-5 h-5" />
                 <span>Download CV</span>
               </span>
             </button>
             <button 
-              onClick={() => window.open('#', '_blank')}
+              onClick={() => window.open('https://github.com/amarnathckr', '_blank')}
               className={`group px-8 py-4 rounded-xl font-semibold border-2 transition-all duration-300 hover:scale-105 ${
                 isDark 
                   ? 'border-gray-600 text-gray-300 hover:border-blue-500 hover:text-blue-400' 
