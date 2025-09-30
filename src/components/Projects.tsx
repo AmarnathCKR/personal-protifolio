@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { ExternalLink, Github, Calendar, ArrowRight, X, ShoppingCart, GraduationCap } from 'lucide-react';
-
+import fabgalaxy from "../assets/images/fab-galaxy-1.png";
+import edugo from "../assets/images/edugo.png";
 interface ProjectsProps {
   isDark: boolean;
 }
@@ -15,7 +16,7 @@ const Projects: React.FC<ProjectsProps> = ({ isDark }) => {
       subtitle: 'E-commerce Web App',
       description: 'A modern e-commerce platform for women\'s clothing with elegant design and comprehensive features.',
       longDescription: 'Fab Galaxy is a full-featured e-commerce website specializing in women\'s clothing. The platform combines elegant design with robust functionality to deliver an exceptional shopping experience.',
-      image: '/src/assets/images/fab-galaxy-1.png',
+      image: fabgalaxy,
       icon: <ShoppingCart className="w-6 h-6" />,
       period: 'November 2023 – February 2024',
       technologies: ['React.js', 'Next.js', 'Node.js', 'Express', 'MongoDB', 'CSS'],
@@ -39,7 +40,7 @@ const Projects: React.FC<ProjectsProps> = ({ isDark }) => {
       subtitle: 'eLearning Platform',
       description: 'An innovative e-learning platform designed to revolutionize online education with interactive features.',
       longDescription: 'Edugo is a comprehensive e-learning platform that provides a safe and interactive environment for students and educators to connect, learn, and collaborate.',
-      image: '/src/assets/images/edugo.png',
+      image: edugo,
       icon: <GraduationCap className="w-6 h-6" />,
       period: 'June 2023 – July 2023',
       technologies: ['React', 'Tailwind CSS', 'Redux Toolkit', 'Node.js', 'Express', 'MongoDB', 'Socket.IO'],
@@ -90,7 +91,6 @@ const Projects: React.FC<ProjectsProps> = ({ isDark }) => {
               and best practices
             </p>
           </div>
-
           {/* Projects Grid */}
           <div className="grid md:grid-cols-2 gap-8">
             {projects.map((project, index) => (
